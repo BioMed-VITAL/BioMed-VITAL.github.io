@@ -1,6 +1,20 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
+ 
+body {
+  padding-left: 50px;  /* 增加左内边距 */
+  padding-right: 50px; /* 增加右内边距 */
+}
+ 
+.figure-img {
+  padding: 0 15px;  /* 根据需要调整左右内边距 */
+}
+ 
+.hero-body {
+  text-align: left; /* 设置文本左对齐 */
+}
+ 
 
 
 .footer .icon-link {
