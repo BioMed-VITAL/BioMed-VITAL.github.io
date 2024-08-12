@@ -301,7 +301,7 @@
     <div class="column is-full-width">
       <div class="content has-text-justified">
         <p>
-          Based on the PMC-15 dataset, we interact with GPT-4V, and collect 80K unique language-image instruction-following samples in total. Please check out ``BioMed-VITAL-Instruct-80K''' on 
+          Based on the PMC-15 dataset, we utilized gpt-4-vision-preview API to generate multi-round QA instructional data and conducted a two-stage clinician preference alignment process, selecting 60K and 80K language-image instruction-following samples. Additionally, we combined the filtered 80K samples with 10K and 60K samples provided by LLaVA-Med, resulting in a larger dataset of 150K samples (80K+10K+60K). We also offer an intermediate dataset of 60K samples that only incorporates the second stage of preference distillation, merging these to form a dataset of 210K samples (80K+10K+60K+60K).
           <a href="https://huggingface.co/datasets/mao1207/BioMed-VITAL-instructions">[HuggingFace Dataset]</a>.
 
 <!-- CSS Code: Place this code in the document's head (between the 'head' tags) -->
@@ -340,8 +340,13 @@
     </thead>
     <tbody>
       <tr>
+        <td><a href="https://huggingface.co/datasets/mao1207/BioMed-VITAL-instructions/blob/main/BioMed-VITAL-instructions-60K.json">BioMed-VITAL-instructions-60K.json</a> </td>
+        <td>127 MB</td>
+        <td>60K</td>
+      </tr>
+      <tr>
         <td><a href="https://huggingface.co/datasets/mao1207/BioMed-VITAL-instructions/blob/main/BioMed-VITAL-instructions-80K.json">BioMed-VITAL-instructions-80K.json</a> </td>
-        <td>142 MB</td>
+        <td>156 MB</td>
         <td>80K</td>
       </tr>
       <tr>
@@ -351,8 +356,8 @@
       </tr>
       <tr>
         <td><a href="https://huggingface.co/datasets/mao1207/BioMed-VITAL-instructions/blob/main/BioMed-VITAL-instructions-210K.json">BioMed-VITAL-instructions-210K.json</a> </td>
-        <td>462 MB</td>
-        <td>60K + 10K + 80K + 60K</td>
+        <td>463 MB</td>
+        <td>80K + 10K + 60K + 60K</td>
       </tr>
     </tbody>
   </table>
